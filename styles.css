@@ -45,3 +45,16 @@ body {
 
 }
 
+@media (min-width: 768px){ 
+    .aparecer{
+        display: none;
+    }
+
+    .foto{
+        border: 1px solid rgb(5, 5, 5);
+        height: 350px;
+        width: 400px;
+    } 
+
+}
+
