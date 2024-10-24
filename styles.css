@@ -1,5 +1,8 @@
-body {
+body, html {
     background: linear-gradient(to bottom, #ff7e5f, #f8e6d8);
+    overflow-x: hidden;
+    min-width: 480px;
+    width: 100%;
 }
 
 .foto {
