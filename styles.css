@@ -1,5 +1,47 @@
-.foto{
-    border: 1px solid red;
-    height: 350px;
-    width: 500px;
+body {
+    background: linear-gradient(to bottom, #ff7e5f, #f8e6d8);
 }
+
+
+@media (max-width: 1980px){ 
+    .foto{
+        border: 1px solid red;
+        height: 350px;
+        width: 500px;
+    } 
+}
+
+
+@media (max-width: 1280px){ 
+    .foto{
+        border: 1px solid red;
+        height: 300px;
+        width: 400px;
+    } 
+}
+
+
+@media (max-width: 1048px){ 
+
+
+    .foto{
+        border: 1px solid rgb(5, 5, 5);
+        height: 250px;
+        width: 300px;
+    } 
+}
+
+
+@media (max-width: 768px){ 
+    .sumir{
+        display: none;
+    }
+
+    .foto{
+        border: 1px solid rgb(5, 5, 5);
+        height: 350px;
+        width: 400px;
+    } 
+
+}
+
