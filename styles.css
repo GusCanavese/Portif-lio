@@ -2,35 +2,37 @@ body {
     background: linear-gradient(to bottom, #ff7e5f, #f8e6d8);
 }
 
+.foto {
+    border: 10px solid rgb(135, 153, 152);
+    border-radius: 40px;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.foto:hover {
+    border: 12px solid rgb(180, 180, 180); /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouquinho a imagem */
+}
 
 @media (max-width: 1980px){ 
     .foto{
-        border: 1px solid red;
         height: 350px;
         width: 500px;
     } 
 }
 
-
 @media (max-width: 1280px){ 
     .foto{
-        border: 1px solid red;
         height: 300px;
         width: 400px;
     } 
 }
 
-
 @media (max-width: 1048px){ 
-
-
     .foto{
-        border: 1px solid rgb(5, 5, 5);
         height: 250px;
         width: 300px;
     } 
 }
-
 
 @media (max-width: 768px){ 
     .sumir{
@@ -38,11 +40,9 @@ body {
     }
 
     .foto{
-        border: 1px solid rgb(5, 5, 5);
         height: 350px;
         width: 400px;
     } 
-
 }
 
 @media (min-width: 768px){ 
@@ -51,10 +51,9 @@ body {
     }
 
     .foto{
-        border: 1px solid rgb(5, 5, 5);
+        border-radius: 40px;
+        border: 10px solid rgb(135, 153, 152);
         height: 350px;
         width: 400px;
     } 
-
 }
-
