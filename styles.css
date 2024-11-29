@@ -1,3 +1,7 @@
+*{
+ align-items: center;
+}
+
 body, html {
     background: linear-gradient(to bottom, #585858, #f8e6d8);
     overflow-x: hidden;
@@ -5,16 +9,15 @@ body, html {
     width: 100%;
     color: aliceblue;
     font-family: sans-serif; 
-    font-size: 22px;
-    
 }
 
-#efeitoMaquina{
-    border-right: 3px solid;
-    width: 25ch;
+.efeitoMaquina{
+    
+    border-right: 3px solid tomato;
+    width: 50ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: digitando 2s steps(25), 
+    animation: digitando 2s steps(50), 
     piscando 0.5s infinite step-end alternate;
 }
 
@@ -26,24 +29,29 @@ body, html {
 }
 
 @keyframes piscando {
-    50% {
+    50% {1
         border-color: transparent;
     }
 }
 
 .containerNovo{
+    align-items: center;
     margin-top: 10px;
     width: 80%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto;    
 }
 
 .cabecalho{
     background: linear-gradient(to bottom, #585858, #636261);
-    box-shadow: 10px 0px 10px -3px rgb(44, 44, 44);
+    box-shadow: 10px 0px 5px -3px rgb(44, 44, 44);
+    font-size: 30px;
+    align-content: center;
 }
+
+
 
 .foto {
     border: 10px solid rgb(135, 153, 152);
