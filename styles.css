@@ -1,8 +1,48 @@
 body, html {
-    background: linear-gradient(to bottom, #ff7e5f, #f8e6d8);
+    background: linear-gradient(to bottom, #585858, #f8e6d8);
     overflow-x: hidden;
     min-width: 480px;
     width: 100%;
+    color: aliceblue;
+    font-family: sans-serif; 
+    font-size: 22px;
+    
+}
+
+#efeitoMaquina{
+    border-right: 3px solid;
+    width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2s steps(25), 
+    piscando 0.5s infinite step-end alternate;
+}
+
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.containerNovo{
+    margin-top: 10px;
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cabecalho{
+    background: linear-gradient(to bottom, #585858, #636261);
+    box-shadow: 10px 0px 10px -3px rgb(44, 44, 44);
 }
 
 .foto {
@@ -12,9 +52,23 @@ body, html {
 }
 
 .foto:hover {
-    border: 12px solid rgb(180, 180, 180); /* Cor mais clara ao passar o mouse */
+    border: 8px solid rgb(180, 180, 180); /* Cor mais clara ao passar o mouse */
     transform: scale(1.05); /* Aumenta um pouquinho a imagem */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1980px){ 
     .foto{
@@ -54,8 +108,9 @@ body, html {
     }
 
     .foto{
-        border-radius: 40px;
-        border: 10px solid rgb(135, 153, 152);
+        box-shadow: -5px 0px 20px 5px black;
+        border-radius: 30px;
+        border: 5px solid rgb(135, 153, 152);
         height: 350px;
         width: 400px;
     } 
