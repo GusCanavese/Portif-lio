@@ -3,7 +3,8 @@
 }
 
 body, html {
-    background: linear-gradient(to bottom, #585858, #f8e6d8);
+    background: #343a40 url(.jpg);
+    background-attachment: fixed;
     overflow-x: hidden;
     min-width: 480px;
     width: 100%;
@@ -12,26 +13,37 @@ body, html {
 }
 
 .efeitoMaquina{
-    
     border-right: 3px solid tomato;
     width: 50ch;
     white-space: nowrap;
     overflow: hidden;
     animation: digitando 2s steps(50), 
     piscando 0.5s infinite step-end alternate;
+} 
+
+
+
+.containerLateral{
+    background-color: #111418;
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
 }
 
-
-@keyframes digitando {
-    from {
-        width: 0;
-    }
+.btn{
+    background-color: #bf2d0e;
+    border-radius: 100px;
+    color: white;
 }
 
-@keyframes piscando {
-    50% {1
-        border-color: transparent;
-    }
+.letrasOpcao{
+    font-family:'Roboto';
+    font-size: 15px;
+    margin-top: 70%;
 }
 
 .containerNovo{
@@ -45,9 +57,10 @@ body, html {
 }
 
 .cabecalho{
-    background: linear-gradient(to bottom, #585858, #636261);
-    box-shadow: 10px 0px 5px -3px rgb(44, 44, 44);
+    background: #212529;
+    box-shadow: 10px 0px 10px -3px rgb(44, 44, 44);
     font-size: 30px;
+    padding-top: 15px;
     align-content: center;
 }
 
@@ -67,7 +80,17 @@ body, html {
 
 
 
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+}
 
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
 
 
 
