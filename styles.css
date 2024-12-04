@@ -1,11 +1,12 @@
 body, html {
-    background: #343a40 url(.jpg);
     background-attachment: fixed;
     overflow-x: hidden;
     min-width: 480px;
     width: 100%;
     color: aliceblue;
-    font-family: sans-serif; 
+    font-family: "Poppins", sans-serif; 
+    height: 100%;
+    align-items: center;
 }
 
 .containerNovo{
@@ -29,8 +30,77 @@ body, html {
     piscando 0.5s infinite step-end alternate;
 } 
 
-.margemResponsiva{
+.divCentral{
     margin-left: 250px;
+    background: url(rido.png),
+                url(agoravai.jpg)
+                no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto fique alinhado */
+}
+
+h2{
+    color: white;
+    font-weight: 00;
+}
+
+strong{
+    color: #bf2d0e;
+}
+
+
+.opacity-1 {
+    opacity: 0.1;
+}
+
+.alinha-direita{
+    text-align: left !important;
+}
+
+.titulo{
+    font-size: 50px;
+    margin-top: -140px;
+    /* margin-bottom: -10px; */
+    z-index: 1; 
+}
+
+.paragrafo{
+    color: rgb(255,255,255,0.5);
+    font-size: 1.25rem;
+}
+
+.font-weight{
+    font-weight: 600;
+}
+
+.text-7{
+    font-size: 1.25rem;
+}
+
+.text-24{
+    font-size: 8.25rem;
+    
+}
+
+.secoes{
+    margin-left: 250px;
+    text-align: center;
+    background-color: #212529;
+}
+
+.alinha-meio{
+    align-content: center;
+}
+
+hr{
+    background-color: grey;
 }
 
 .containerLateral{
@@ -44,11 +114,24 @@ body, html {
     box-sizing: border-box;
 }
 
-.btn{
+
+
+.btnLateral{
+    border: transparent;
     background-color: #bf2d0e;
     border-radius: 100px;
     color: white;
 }
+
+
+/* fazer o hover dos botões */
+.btn-outline-primary{
+    border: 3px solid #bf2d0e;
+    border-radius: 100px;
+    color: white;
+    font-size: 30px;
+}
+
 
 .letrasOpcao{
     font-family:'Roboto';
@@ -60,8 +143,7 @@ body, html {
 .cabecalho{
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 15px;
     align-content: center;
 }
@@ -113,6 +195,9 @@ body, html {
     }
 }
 
+.linha{
+    margin-top: -30px; color: tomato;
+}
 
 
 
@@ -127,11 +212,31 @@ body, html {
     .sumir1{
         display: none;
     }
+
+    .titulo{
+        font-size: 40px;
+        margin-top: -105px;
+        z-index: 1; 
+    }
+
+    .text-24{
+        font-size: 100px;
+    }
+
+
+    .divCentral{
+        margin-left: 0px;
+    }
+    .cabecalho{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 15px;
+        align-content: center;
+    }
+    .secoes{
+        margin-left: 0px;
+    }
 }
-
-
-
-
 
 
 @media (max-width: 1048px){ 
@@ -142,7 +247,7 @@ body, html {
     .sumir2{
         display: none;
     }
-    .margemResponsiva{
+    .divCentral{
         margin-left: 0px;
     }
     .cabecalho{
@@ -151,6 +256,28 @@ body, html {
         padding-top: 15px;
         align-content: center;
     }
+    .secoes{
+        margin-left: 0px;
+    }
+
+    .subsec{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+
+
+
+    .text-24{
+        font-size: 70px;
+    }
+
+    .titulo{
+        font-size: 30px;
+        margin-top: -75px;
+        z-index: 1; 
+    }
+
 }
 
 
