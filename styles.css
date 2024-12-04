@@ -60,9 +60,7 @@ strong{
     opacity: 0.1;
 }
 
-.alinha-direita{
-    text-align: left !important;
-}
+
 
 .titulo{
     font-size: 50px;
@@ -95,10 +93,6 @@ strong{
     background-color: #212529;
 }
 
-.alinha-meio{
-    align-content: center;
-}
-
 hr{
     background-color: grey;
 }
@@ -114,15 +108,12 @@ hr{
     box-sizing: border-box;
 }
 
-
-
 .btnLateral{
     border: transparent;
     background-color: #bf2d0e;
     border-radius: 100px;
     color: white;
 }
-
 
 /* fazer o hover dos botões */
 .btn-outline-primary{
@@ -131,7 +122,6 @@ hr{
     color: white;
     font-size: 30px;
 }
-
 
 .letrasOpcao{
     font-family:'Roboto';
@@ -148,8 +138,6 @@ hr{
     align-content: center;
 }
 
-
-
 .foto {
     border: 10px solid rgb(135, 153, 152);
     border-radius: 40px;
@@ -161,8 +149,14 @@ hr{
     transform: scale(1.05); /* Aumenta um pouquinho a imagem */
 }
 
+.alinha-meio{
+    align-self: center;
+}
 
-
+.linha{
+    color: tomato;
+    margin-top: -20px;
+}
 
 @keyframes digitando {
     from {
@@ -193,11 +187,12 @@ hr{
     .sumir0{
         display: none;
     }
+
+    .alinha-direita{
+        text-align: left;
+    }
 }
 
-.linha{
-    margin-top: -30px; color: tomato;
-}
 
 
 
@@ -236,6 +231,10 @@ hr{
     .secoes{
         margin-left: 0px;
     }
+
+    .alinha-direita{
+        text-align: left;
+    }
 }
 
 
@@ -260,14 +259,6 @@ hr{
         margin-left: 0px;
     }
 
-    .subsec{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-
-
     .text-24{
         font-size: 70px;
     }
@@ -278,10 +269,11 @@ hr{
         z-index: 1; 
     }
 
+    .alinha-direita{
+        text-align: left;
+    }
+
 }
-
-
-
 
 
 
@@ -295,12 +287,8 @@ hr{
         height: 350px;
         width: 400px;
     } 
-}
 
-@media (min-width: 768px){ 
-    .aparecer{
-        display: none;
-    }
+
 
     .foto{
         box-shadow: -5px 0px 20px 5px black;
@@ -309,4 +297,24 @@ hr{
         height: 350px;
         width: 400px;
     } 
+
+    .subsec .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-7{
+        width: 100% !important; /* Fazer com que ocupem a largura total */
+    }
+
+    .alinha-direita{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    .aparecer{
+        display: none;
+    }
 }
