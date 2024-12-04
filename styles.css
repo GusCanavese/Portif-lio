@@ -1,7 +1,3 @@
-*{
- align-items: center;
-}
-
 body, html {
     background: #343a40 url(.jpg);
     background-attachment: fixed;
@@ -12,6 +8,18 @@ body, html {
     font-family: sans-serif; 
 }
 
+.containerNovo{
+    align-items: center;
+    margin-top: 10px;
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+
+
 .efeitoMaquina{
     border-right: 3px solid tomato;
     width: 50ch;
@@ -21,7 +29,9 @@ body, html {
     piscando 0.5s infinite step-end alternate;
 } 
 
-
+.margemResponsiva{
+    margin-left: 250px;
+}
 
 .containerLateral{
     background-color: #111418;
@@ -46,19 +56,11 @@ body, html {
     margin-top: 70%;
 }
 
-.containerNovo{
-    align-items: center;
-    margin-top: 10px;
-    width: 80%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;    
-}
 
 .cabecalho{
-    background: #212529;
-    box-shadow: 10px 0px 10px -3px rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 30px;
     padding-top: 15px;
     align-content: center;
@@ -106,21 +108,56 @@ body, html {
         height: 350px;
         width: 500px;
     } 
+    .sumir0{
+        display: none;
+    }
 }
+
+
+
+
+
+
 
 @media (max-width: 1280px){ 
     .foto{
         height: 300px;
         width: 400px;
     } 
+    .sumir1{
+        display: none;
+    }
 }
+
+
+
+
+
 
 @media (max-width: 1048px){ 
     .foto{
         height: 250px;
         width: 300px;
     } 
+    .sumir2{
+        display: none;
+    }
+    .margemResponsiva{
+        margin-left: 0px;
+    }
+    .cabecalho{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 15px;
+        align-content: center;
+    }
 }
+
+
+
+
+
+
 
 @media (max-width: 768px){ 
     .sumir{
