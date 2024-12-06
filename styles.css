@@ -8,6 +8,15 @@ body, html {
     font-family: "Poppins", sans-serif; 
     /* height: 100%; */
     align-items: center;
+    z-index: 0;
+}
+
+#particles-js {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* pointer-events: none; */
 }
 
 .icone{
@@ -18,8 +27,6 @@ body, html {
     color: #bf2d0e;
 }
 
-
-
 .containerNovo{
     align-items: center;
     margin-top: 10px;
@@ -29,8 +36,6 @@ body, html {
     margin-right: auto;
     margin-left: auto;    
 }
-
-
 
 .paragrafopequeno{
     color: rgb(255,255,255,0.5);
@@ -47,9 +52,10 @@ body, html {
 } 
 
 .divCentral{
+    position: relative;
+    z-index: 3 ;
     margin-left: 250px;
-    background: url(rido.png),
-                url(agoravai.jpg)
+    background: url(img/agoravai.jpg)
                 no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -190,14 +196,6 @@ hr{
         border-color: transparent;
     }
 }
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 1980px){ 
