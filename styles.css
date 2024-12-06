@@ -1,6 +1,6 @@
 body, html {
     background-attachment: fixed;
-    background-color: #0080ff;
+    background-color: #212529;
     overflow-x: hidden;
     min-width: 480px;
     width: 100%;
@@ -9,6 +9,16 @@ body, html {
     /* height: 100%; */
     align-items: center;
 }
+
+.icone{
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #bf2d0e;
+}
+
+
 
 .containerNovo{
     align-items: center;
@@ -21,6 +31,11 @@ body, html {
 }
 
 
+
+.paragrafopequeno{
+    color: rgb(255,255,255,0.5);
+    font-size: 1.10rem;
+}
 
 .efeitoMaquina{
     border-right: 3px solid tomato;
@@ -223,6 +238,11 @@ hr{
     .divCentral{
         margin-left: 0px;
     }
+
+    .secoes1{
+        margin-left: 0px;
+    }
+
     .cabecalho{
         text-align: center;
         font-size: 25px;
