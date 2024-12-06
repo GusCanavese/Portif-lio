@@ -6,7 +6,7 @@ body, html {
     width: 100%;
     color: aliceblue;
     font-family: "Poppins", sans-serif; 
-    height: 100%;
+    /* height: 100%; */
     align-items: center;
 }
 
@@ -43,8 +43,8 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    text-align: center; /* Garante que o texto fique alinhado */
+    align-items: center; 
+    text-align: center;  
 }
 
 h2{
@@ -87,11 +87,16 @@ strong{
     font-size: 8.25rem;
     
 }
-
 .secoes{
     margin-left: 250px;
     text-align: center;
     background-color: #212529;
+}
+.secoes1{
+    margin-left: 250px;
+    text-align: center;
+    background-color: #343a40;
+        
 }
 
 hr{
@@ -195,11 +200,6 @@ hr{
 }
 
 
-
-
-
-
-
 @media (max-width: 1280px){ 
     .foto{
         height: 300px;
@@ -277,8 +277,6 @@ hr{
 }
 
 
-
-
 @media (max-width: 768px){ 
     .sumir{
         display: none;
@@ -299,7 +297,7 @@ hr{
         width: 400px;
     } 
 
-    .subsec .row{
+    .subsec1 .row{
         display: flex;
         flex-direction: column;
         justify-content: center;
