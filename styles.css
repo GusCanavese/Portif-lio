@@ -19,6 +19,16 @@ body, html {
     /* pointer-events: none; */
 }
 
+.container-interno {
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: 1.0s;
+}
+
+.container-interno:hover {
+    opacity: 1;
+}
+
 .icone{
     font-size: 30px;
     padding: 20px;
@@ -182,14 +192,20 @@ hr{
     align-content: center;
 }
 
+.moldura{
+    width: 300px !important;
+    height: 250px !important;
+}
+
 .foto {
-    border: 10px solid rgb(135, 153, 152);
-    border-radius: 40px;
+    border: 3px solid rgb(59, 65, 64);
+    border-radius: 6px;
     transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
 }
 
 .foto:hover {
-    border: 8px solid rgb(180, 180, 180); /* Cor mais clara ao passar o mouse */
+    border: 5px solid rgb(180, 180, 180); /* Cor mais clara ao passar o mouse */
     transform: scale(1.05); /* Aumenta um pouquinho a imagem */
 }
 
@@ -272,6 +288,20 @@ hr{
         text-align: left;
     }
 }
+
+@media (max-width: 1200px){
+    .sumir4{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .aparecer4{
+        display: none;
+    }
+}
+
+
 
 
 @media (max-width: 1048px){ 
