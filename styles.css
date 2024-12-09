@@ -6,9 +6,10 @@ body, html {
     width: 100%;
     color: aliceblue;
     font-family: "Poppins", sans-serif; 
-    /* height: 100%; */
     align-items: center;
     z-index: 0;
+    text-decoration: none; 
+
 }
 
 #particles-js {
@@ -17,6 +18,65 @@ body, html {
     height: 100%;
     width: 100%;
     /* pointer-events: none; */
+}
+
+a{
+    text-decoration: none !important;
+}
+
+nav {
+    padding: 0; /* Remove o espaçamento padrão */
+    margin: 0; /* Remove a margem padrão */
+  }
+  
+nav li {
+    margin: 10px 0; /* Espaçamento entre os itens, opcional */
+  }
+  
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; 
+}
+
+.active{
+    color: #bf2d0e;
+}
+
+nav a:hover {
+    color: #bf2d0e; 
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal-content {
+    pointer-events: auto;
+}
+
+button.close {
+    pointer-events: auto;
+}
+
+
+
+
+.modal-title{
+    color: #111418;
+    text-align: center;
+}
+
+.modal-header{
+    justify-content: center !important; 
+}
+
+.modal-body{
+    color: #111418;
 }
 
 .container-interno {
@@ -118,6 +178,12 @@ strong{
     z-index: 1; 
 }
 
+.strong1{
+    font-size: 20px;
+    color: aliceblue;
+    
+}
+
 .paragrafo{
     color: rgb(255,255,255,0.5);
     font-size: 1.25rem;
@@ -178,6 +244,7 @@ hr{
 }
 
 .letrasOpcao{
+    
     font-family:'Roboto';
     font-size: 15px;
     margin-top: 70%;
@@ -363,17 +430,11 @@ hr{
         display: none;
     }
 
-    .foto{
-        height: 350px;
-        width: 400px;
-    } 
-
 
 
     .foto{
-        box-shadow: -5px 0px 20px 5px black;
-        border-radius: 30px;
-        border: 5px solid rgb(135, 153, 152);
+        /* border-radius: 30px;
+        border: 5px solid rgb(135, 153, 152); */
         height: 350px;
         width: 400px;
     } 

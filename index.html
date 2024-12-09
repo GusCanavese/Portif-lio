@@ -5,18 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Portfólio de Gustavo Canavese - Desenvolvedor Full-Stack. Descubra mais sobre meus serviços e entre em contato.">
-    <meta name="keywords" content="Gustavo Canavese, Desenvolvedor, Full-Stack, Portfólio, Contato">
+        <meta name="keywords" content="Gustavo Canavese, Desenvolvedor, Full-Stack, Portfólio, Contato">
 
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/c770a83cab.js" crossorigin="anonymous"></script>
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+        
         <title>Gustavo</title>
     </head>
 
@@ -26,15 +34,21 @@
     <div class="containerLateral sumir1">
         <img class="mt-5 mb-2" src="img/download.jpg" width="60%" style="border-radius: 100%; border: 5px solid grey;" >
         <p class="mt-3">Gustavo Canavese</p>
-        <div class="letrasOpcao">
-            <p>Início</p>
-            <p>Sobre mim</p>
-            <p>O que eu faço</p>
-            <p>Resumo</p>
-            <p>Portifólio</p>
-            <p>Depoimentos</p>
-            <p>Contato</p>
-        </div>
+
+
+
+
+        <nav class="letrasOpcao">
+            <ul class="list-group">
+                <li><a href="#inicio" class="ativado">Inicio</a></li>
+                <li><a href="#sec1" class="ativado">Sobre mim</a></li>
+                <li><a href="#sec2" class="ativado">O que eu faço</a></li>
+                <li><a href="#sec3" class="ativado">Resumo</a></li>
+                <li><a href="#sec4" class="ativado">Conhecimento</a></li>
+                <li><a href="#sec5" class="ativado">Portifólio</a></li>
+                <li><a href="#tem que fazer gustavo caraio">Contato</a></li>
+            </ul>
+        </nav>
 
         <button class="mt-5 btn btnLateral">
             entre em contato pelo wpp
@@ -43,7 +57,7 @@
     </div>
 
     <!-- bem vindo -->
-    <div class="divCentral" >
+    <section class="divCentral" id="inicio">
 
         <div  id="particles-js"></div>
         <div class=" container cabecalho" style="pointer-events: none;">
@@ -57,10 +71,10 @@
             <button class="btn btn-outline-primary">Contato</button>
         </div>
 
-    </div>
+    </section>
 
     <!-- sobre mim -->
-    <div class="secoes mb-5 mt-5">
+    <section class="secoes mb-5 mt-5" id="sec1">
         <div class="container font-weight opacity-1 text-24 text-muted mt-5 ">SOBRE MIM</div>
         <p class=" titulo titulo-telaMenor">Um pouco sobre mim</p>
         <p class="linha">_______________</p>
@@ -107,10 +121,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- o que eu faço -->
-    <div class="secoes1" style="border: 1px solid #212529;">
+    <section class="secoes1" id="sec2" style="border: 1px solid #212529;">
         <div class="container font-weight opacity-1 text-24 text-muted mt-5 ">SERVIÇO</div>
         <p class=" titulo titulo-telaMenor">O que eu faço</p>
         <p class="linha ">_______________</p>
@@ -239,10 +253,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- onde já trabalhei -->
-    <div class="secoes" style="border: 1px solid #343a40;">
+    <section class="secoes" id="sec3" style="border: 1px solid #343a40;">
         <div class="container font-weight opacity-1 text-24 text-muted mt-5 ">RESUMO</div>
         <p class=" titulo titulo-telaMenor">Onde já trabalhei</p>
         <p class="linha ">_______________</p>
@@ -318,10 +332,10 @@
                 
         </div>
         
-    </div>
+    </section>
 
     <!-- o que eu sei -->
-    <div class="secoes1" style="border: 1px solid #212529;">
+    <section class="secoes1" id="sec4" style="border: 1px solid #212529;">
         <div class="container font-weight opacity-1 text-24 text-muted mt-5 ">O QUE SEI</div>
         <p class=" titulo titulo-telaMenor">Conhecimento</p>
         <p class="linha ">_______________</p>
@@ -524,56 +538,552 @@
 
         </div>
 
-    </div>
+    </section>
 
-
-
-
-
-    <div class="secoes" style="border: 1px solid #212529;">
+    <!-- portifólio -->
+    <section class="secoes" id="sec5" style="border: 1px solid #212529;">
         <div class="container font-weight opacity-1 text-24 text-muted mt-5 ">PORTIFÓLIO</div>
         <p class=" titulo titulo-telaMenor">Meus Trabalhos</p>
         <p class="linha ">_______________</p>
         <div class="container"><p class="paragrafo">Nessa parte, podemos ver os projetos que me ajudaram a
         crescer como desenvolvedor, alguns deles são projetos simples
         e outros são trabalhos que fiz profissionalmente para clientes</p></div>
+
         <div class="sumir4">
             <div class="container mt-5 p-5 subsec1">
                 <div class="row">
-                    <div class="col-4 "><a href="https://guscanavese.github.io/escritorio/"><img class="foto moldura mt-5 mb-5 " src="img/leuebe.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/projetos-front-end/"><img class="foto moldura mt-5 mb-5" src="img/front.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/"><img class="foto moldura mt-5 mb-5" src="img/jogo.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/"><img class="foto moldura mt-5 mb-5" src="img/calculadora.png"></a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal "><img class="foto moldura mt-5 mb-5 " src="img/leuebe.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal1"><img class="foto moldura mt-5 mb-5" src="img/front.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal2"><img class="foto moldura mt-5 mb-5" src="img/jogo.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal3"><img class="foto moldura mt-5 mb-5" src="img/calculadora.png"></a></div>
                     
-                    <div class="col-4 "><a href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/"><img class="foto moldura mt-5 mb-5" src="img/spotfy.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/Finnans_Html_bootstrap/"><img class="foto moldura mt-5 mb-5" src="img/finans.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/Museu_Nacional_Html_css/"><img class="foto moldura mt-5 mb-5" src="img/museu.png" a></div>
-                    <div class="col-4 "><a href="https://guscanavese.github.io/Chale_Hotel_html_css/"><img class="foto moldura mt-5 mb-5" src="img/hotel.png"></a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal4"><img class="foto moldura mt-5 mb-5" src="img/spotfy.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal5"><img class="foto moldura mt-5 mb-5" src="img/finans.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal6"><img class="foto moldura mt-5 mb-5" src="img/museu.png" a></div>
+                    <div class="col-4 "><a data-toggle="modal" data-target="#meuModal7"><img class="foto moldura mt-5 mb-5" src="img/hotel.png"></a></div>
                 </div>
             </div>
         </div>
-        <div class="aparecer4">
-            <div class="container mt-5 p-5 subsec1">
-                <div class="row" style="text-align: center;">
+          
+        <div>
+            <!-- leuebe -->
+            <div class="modal fade" id="meuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
 
-                    <div class="col-12"><a href="https://guscanavese.github.io/escritorio/"><img class="foto mt-5" src="img/leuebe.png" alt=""></a></div>
-                    <div class="col-12"><a href="https://guscanavese.github.io/projetos-front-end/"><img class="foto mt-5" src="img/front.png" alt=""></a></div>
-                    
-                    <div class="col-12"><a href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/"><img class="foto mt-5" src="img/jogo.png" alt=""></a></div>
-    
-                    <div class="col-12"><a href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/"><img class="foto mt-5" src="img/calculadora.png" alt=""></a></div>
-    
-    
-                    <div class="col-12"><a href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/"><img class="foto mt-5" src="img/spotfy.png" alt=""></a></div>
-                    <div class="col-12"><a href="https://guscanavese.github.io/Finnans_Html_bootstrap/"><img class="foto mt-5" src="img/finans.png" alt=""></a></div>
-                    <div class="col-12"><a href="https://guscanavese.github.io/Museu_Nacional_Html_css/"><img class="foto mt-5" src="img/museu.png" alt=""></a></div>
-                    <div class="col-12"><a href="https://guscanavese.github.io/Chale_Hotel_html_css/"><img class="foto mt-5" src="img/hotel.png" alt=""></a></div>
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/escritorio/"><img width="100%" src="img/leuebe.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/escritorio/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/escritorio/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobiliza -->
+            <div class="modal fade" id="meuModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/projetos-front-end/"><img width="100%" src="img/front.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/projetos-front-end/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/projetos-front-end/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- matamosquito -->
+            <div class="modal fade" id="meuModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/"><img width="100%" src="img/jogo.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- calculadora -->
+            <div class="modal fade" id="meuModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/"><img width="100%" src="img/calculadora.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- spotfy -->
+            <div class="modal fade" id="meuModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Spotfy</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/"><img width="100%" src="img/spotfy.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- finnans -->
+            <div class="modal fade" id="meuModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Finnans</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/Finnans_Html_bootstrap/"><img width="100%" src="img/finans.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Finnans_Html_bootstrap/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Finnans_Html_bootstrap/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- museu nacional -->
+            <div class="modal fade" id="meuModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Museu Nacional</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/Museu_Nacional_Html_css/"><img width="100%" src="img/museu.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Museu_Nacional_Html_css/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Museu_Nacional_Html_css/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- chalé hotel -->
+            <div class="modal fade" id="meuModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Chalé hotel</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-6 " href="https://guscanavese.github.io/Chale_Hotel_html_css/"><img width="100%" src="img/hotel.png"></div>
+                                <div class="col-6 " style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Chale_Hotel_html_css/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Chale_Hotel_html_css/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
+        <div class="aparecer4">
+            <div class="container mt-5 p-5 subsec1">
+                <div class="row" style="text-align: center;">
+                    <div class="col-12"><a data-toggle="modal" data-target="#meuModal8">                                      <img class="foto moldura mt-5" src="img/leuebe.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/projetos-front-end/">                              <img class="foto moldura mt-5" src="img/front.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/"><img class="foto moldura mt-5" src="img/jogo.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/">                   <img class="foto moldura mt-5" src="img/calculadora.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/">                 <img class="foto moldura mt-5" src="img/spotfy.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/Finnans_Html_bootstrap/">                          <img class="foto moldura mt-5" src="img/finans.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/Museu_Nacional_Html_css/">                         <img class="foto moldura mt-5" src="img/museu.png" alt=""></a></div>
+                    <div class="col-12"><a href="https://guscanavese.github.io/Chale_Hotel_html_css/">                            <img class="foto moldura mt-5" src="img/hotel.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- leuebe -->
+            <div class="modal ml-2 fade" id="meuModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/escritorio/"><img width="100%" src="img/leuebe.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/escritorio/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/escritorio/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobiliza -->
+            <div class="modal fade" id="meuModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/projetos-front-end/"><img width="100%" src="img/front.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/projetos-front-end/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/projetos-front-end/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- matamosquito -->
+            <div class="modal fade" id="meuModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/"><img width="100%" src="img/jogo.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/MATAMOSQUITO-GAME--JAVASCRIPT--HTML5--BOOTSTRAP-/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- calculadora -->
+            <div class="modal fade" id="meuModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Leuebe</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/"><img width="100%" src="img/calculadora.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/calculadora_Js_Html_Bootstrap/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- spotfy -->
+            <div class="modal fade" id="meuModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Spotfy</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/"><img width="100%" src="img/spotfy.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/8---SPOTIFY--HTML5-e-BOOTSTRAP-/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- finnans -->
+            <div class="modal fade" id="meuModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Finnans</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/Finnans_Html_bootstrap/"><img width="100%" src="img/finans.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Finnans_Html_bootstrap/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Finnans_Html_bootstrap/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- museu nacional -->
+            <div class="modal fade" id="meuModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Museu Nacional</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/Museu_Nacional_Html_css/"><img width="100%" src="img/museu.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Museu_Nacional_Html_css/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Museu_Nacional_Html_css/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- chalé hotel -->
+            <div class="modal fade" id="meuModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl"  role="document">
+                    <div class="modal-content" style="background-color: #343a40; ">
+                        <div class="modal-header ">
+
+                            <h3 class="modal-title" style="color: aliceblue;">Chalé hotel</h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                                <div href="https://guscanavese.github.io/Chale_Hotel_html_css/"><img width="100%" src="img/hotel.png"></div>
+                                <div style="text-align: left;">
+                                    <p class="strong1">Informações do projeto:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">site criado para mostrar informações sobre o escritódio de advocacia e suas associadas</p>
+                                    <p class="strong1">Tecnologias:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;">HTML, CSS, Bootstrap, JavaScript</p>
+                                    <p class="strong1">URL:</p> 
+                                    <p class="paragrafo" style="margin-top: -10px;"><a href="https://guscanavese.github.io/Chale_Hotel_html_css/" style="text-decoration: #bf2d0e;">https://guscanavese.github.io/Chale_Hotel_html_css/</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    </section>
     
 
 
@@ -581,8 +1091,8 @@
     
 
 
-
-    <script src="js.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
