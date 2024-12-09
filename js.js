@@ -110,7 +110,7 @@ particlesJS("particles-js", {
     retina_detect: true
 });
 
-const menuLinks = document.querySelectorAll('.letrasOpcao a[href^="#"]')
+const menuLinks = document.querySelectorAll('.letrasOpcao, .letrasOpcaoColapse a[href^="#"]')
 console.log(menuLinks);
 
 function getDistanceFromTheTop(element){

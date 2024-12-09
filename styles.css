@@ -1,3 +1,7 @@
+*{
+    list-style-type: none !important;
+}
+
 body, html {
     background-attachment: fixed;
     background-color: #212529;
@@ -213,7 +217,11 @@ strong{
         
 }
 
-hr{
+.hr2{
+    background-color: #111418;
+}
+
+.hr1{
     background-color: grey;
 }
 
@@ -241,6 +249,12 @@ hr{
     border-radius: 100px;
     color: white;
     font-size: 30px;
+}
+
+.letrasOpcaoColapse{
+    
+    font-family:'Roboto';
+    font-size: 15px;
 }
 
 .letrasOpcao{
@@ -312,6 +326,11 @@ hr{
     }
 }
 
+@media (min-width: 1279px) {
+    .aparecer2{
+        display: none;
+    }
+}
 
 @media (max-width: 1280px){ 
     .foto{
@@ -354,6 +373,7 @@ hr{
     .alinha-direita{
         text-align: left;
     }
+
 }
 
 @media (max-width: 1200px){
