@@ -155,9 +155,6 @@ function smoothScrollTo(endX, endY, duration) {
 }
 
 
-
-
-// Função para alternar a classe ativa
 function highlightSection() {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".ativado");
