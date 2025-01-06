@@ -251,6 +251,22 @@ strong{
     font-size: 30px;
 }
 
+.btn-outline-primary:hover{
+    border: 3px solid #bf2d0e;
+    border-radius: 100px;
+    color: white;
+    background-color: #bf2d0e;
+    font-size: 30px;
+}
+
+.btn-outline-primary:active{
+    border: 3px solid #bf2d0e !important;
+    border-radius: 100px;
+    color: white;
+    background-color: #bf2d0e !important;
+    font-size: 30px;
+}
+
 .letrasOpcaoColapse{
     
     font-family:'Roboto';
