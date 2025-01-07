@@ -125,14 +125,36 @@ button.close {
     font-size: 1.10rem;
 }
 
+
+
 .efeitoMaquina{
     border-right: 3px solid tomato;
-    width: 50ch;
+    width: 51ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: digitando 2s steps(50), 
+    animation: digitando 2s steps(51), 
     piscando 0.5s infinite step-end alternate;
 } 
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.container1{
+    width: 103%;
+    font-size: 100%;
+    pointer-events: none;
+    /* border: 1px solid red; */
+}
+
 
 .divCentral{
     position: relative;
@@ -291,6 +313,7 @@ i{
     font-size: 40px;
     padding-top: 15px;
     align-content: center;
+
 }
 
 .moldura{
@@ -319,17 +342,7 @@ i{
     margin-top: -20px;
 }
 
-@keyframes digitando {
-    from {
-        width: 0;
-    }
-}
 
-@keyframes piscando {
-    50% {
-        border-color: transparent;
-    }
-}
 
 
 @media (max-width: 1980px){ 
@@ -346,13 +359,14 @@ i{
     }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
     .aparecer2{
         display: none;
     }
 }
 
 @media (max-width: 1280px){ 
+    
     .foto{
         height: 300px;
         width: 400px;
@@ -400,9 +414,10 @@ i{
     .sumir4{
         display: none;
     }
+
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1199px){
     .aparecer4{
         display: none;
     }
@@ -454,8 +469,20 @@ i{
     }
 }
 
-@media(min-width: 980px){
+@media(min-width: 981px){
     .aparecer1{
+        display: none;
+    }
+}
+
+@media(max-width: 991px){
+    .sumir5{
+        display: none;
+    }
+}
+
+@media(min-width: 992px){
+    .aparecer3{
         display: none;
     }
 }
@@ -492,10 +519,12 @@ i{
     .alinha-direita{
         text-align: center;
     }
+
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .aparecer{
         display: none;
     }
+
 }
